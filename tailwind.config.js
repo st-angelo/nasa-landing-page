@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+      },
       colors: {
         'horizon-100': 'rgba(188,199,220)',
         'horizon-500': 'rgba(90,144,247)',
