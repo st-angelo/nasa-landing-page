@@ -1,11 +1,22 @@
-const Story = ({ title, tag, background, className }) => (
-  <div className={`relative bg-bordeaux-700 ${className}`}>
+import Typography from './common/Typography';
+
+const Story = ({ title, tag, background, size = 'small', className }) => (
+  <div
+    className={`relative flex flex-col justify-end rounded-md min-h-[16rem] bg-bordeaux-700 hover:bg-bordeaux-600 ${className}`}
+  >
     {tag && (
-      <span className="abosolute text-white top-0 left-0 uppercase bg-[rgba(0,0,0,0.1)]">
+      <span className='absolute top-0 left-0 bg-[rgba(0,0,0,0.1)] px-4 py-1 text-sm uppercase text-white'>
         {tag}
       </span>
     )}
-    <h3 className="text-white">{title}</h3>
+    <Typography
+      variant={'h3'}
+      className={`p-5 font-extrabold text-white ${
+        size === 'small' ? 'text-lg' : 'text-2xl'
+      }`}
+    >
+      {title}
+    </Typography>
   </div>
 );
 

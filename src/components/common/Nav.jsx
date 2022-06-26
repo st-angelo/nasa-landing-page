@@ -1,11 +1,15 @@
+import Hamburger from '@components/icons/Hamburger';
 import Nasa from '@components/icons/Nasa';
 import Share from '@components/icons/Share';
 import NavItem from './NavItem';
 
 const Nav = () => (
-  <nav className="flex justify-between text-xs pt-5 w-4/5">
-    <Nasa classes={"w-16"} />
-    <ul className="flex items-center">
+  <nav className='flex justify-between pt-5 text-xs w-5/6 lg:w-4/5'>
+    <Nasa className={'w-16'} />
+    <button className={'block w-6 fill-white md:hidden'}>
+      <Hamburger />
+    </button>
+    <ul className='hidden items-center md:flex'>
       <NavItem name={'Missions'} />
       <NavItem name={'Galleries'} />
       <NavItem name={'Nasa TV'} />
@@ -14,7 +18,7 @@ const Nav = () => (
       <NavItem name={'About'} />
       <NavItem name={'Nasa Audiences'} />
       <li>
-        <Share classes={"w-5"} />
+        <Share className={'w-5'} />
       </li>
     </ul>
   </nav>
