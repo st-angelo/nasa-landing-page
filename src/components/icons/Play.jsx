@@ -1,5 +1,6 @@
-const Play = () => (
+const Play = ({ className }) => (
   <svg
+    id="Play"
     xmlns="http://www.w3.org/2000/svg"
     shapeRendering="geometricPrecision"
     textRendering="geometricPrecision"
@@ -7,6 +8,7 @@ const Play = () => (
     fillRule="evenodd"
     clipRule="evenodd"
     viewBox="0 0 512 512"
+    className={className}
   >
     <path
       className="fill-white"

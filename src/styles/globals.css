@@ -1,3 +1,10 @@
 @tailwind base;
+
+@layer base {
+  html {
+    @apply text-horizon-100;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;

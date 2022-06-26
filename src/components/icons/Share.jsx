@@ -1,9 +1,8 @@
-const Share = () => (
+const Share = ({ classes }) => (
   <svg
-    id="Layer_1"
-    data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 122.88 120.94"
+    className={classes}
   >
     <path
       className="fill-white"
