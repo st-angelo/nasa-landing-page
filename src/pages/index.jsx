@@ -120,12 +120,12 @@ const Home = () => {
           <Hamburger />
         </button>
         <ul className='hidden flex-wrap items-center py-6 text-xs md:flex'>
-          <li className='px-2 lg:px-4'>No Fear Act</li>
-          <li className='px-2 lg:px-4'>FOIA</li>
-          <li className='px-2 lg:px-4'>Privacy</li>
-          <li className='px-2 lg:px-4'>Office of Inspector General</li>
-          <li className='px-2 lg:px-4'>Agency Financial Reports</li>
-          <li className='px-2 lg:px-4'>Contact NASA</li>
+          <li className='px-2 lg:px-4 cursor-pointer hover:text-white'>No Fear Act</li>
+          <li className='px-2 lg:px-4 cursor-pointer hover:text-white'>FOIA</li>
+          <li className='px-2 lg:px-4 cursor-pointer hover:text-white'>Privacy</li>
+          <li className='px-2 lg:px-4 cursor-pointer hover:text-white'>Office of Inspector General</li>
+          <li className='px-2 lg:px-4 cursor-pointer hover:text-white'>Agency Financial Reports</li>
+          <li className='px-2 lg:px-4 cursor-pointer hover:text-white'>Contact NASA</li>
         </ul>
       </footer>
     </div>
