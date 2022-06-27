@@ -4,7 +4,7 @@ import Share from '@components/icons/Share';
 import NavItem from './NavItem';
 
 const Nav = () => (
-  <nav className='flex justify-between pt-5 text-xs w-5/6 lg:w-4/5'>
+  <nav className='flex w-5/6 justify-between pt-5 text-xs lg:w-4/5'>
     <Nasa className={'w-16'} />
     <button className={'block w-6 fill-white md:hidden'}>
       <Hamburger />
@@ -17,7 +17,7 @@ const Nav = () => (
       <NavItem name={'Downloads'} />
       <NavItem name={'About'} />
       <NavItem name={'Nasa Audiences'} />
-      <li>
+      <li className={'cursor-pointer'}>
         <Share className={'w-5'} />
       </li>
     </ul>
