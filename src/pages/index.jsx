@@ -163,13 +163,21 @@ const Home = () => {
                   download
                 </span>
                 <div className={'flex'}>
-                  <Facebook className={'mx-2 w-4 cursor-pointer fill-white'} />
-                  <Twitter className={'mx-2 w-4 cursor-pointer fill-white'} />
-                  <PinterestCircle
-                    className={'mx-2 w-4 cursor-pointer fill-white'}
+                  <Facebook
+                    className={'mx-1 w-4 cursor-pointer fill-white sm:mx-2'}
                   />
-                  <Google className={'mx-2 w-4 cursor-pointer fill-white'} />
-                  <Plus className={'mx-2 w-4 cursor-pointer fill-white'} />
+                  <Twitter
+                    className={'mx-1 w-4 cursor-pointer fill-white sm:mx-2'}
+                  />
+                  <PinterestCircle
+                    className={'mx-1 w-4 cursor-pointer fill-white sm:mx-2'}
+                  />
+                  <Google
+                    className={'mx-1 w-4 cursor-pointer fill-white sm:mx-2'}
+                  />
+                  <Plus
+                    className={'mx-1 w-4 cursor-pointer fill-white sm:mx-2'}
+                  />
                 </div>
               </div>
             </div>
