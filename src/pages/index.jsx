@@ -117,7 +117,14 @@ const Home = () => {
             }
           >
             <h3 className={'text-lg font-extrabold text-white'}>
-              Tweets by <span className={'text-horizon-500'}>@NASA</span>
+              Tweets by{' '}
+              <span
+                className={
+                  'cursor-pointer text-horizon-500 hover:text-horizon-700'
+                }
+              >
+                @NASA
+              </span>
             </h3>
           </div>
           <div
@@ -130,13 +137,17 @@ const Home = () => {
             </span>
             <div
               className={
-                'absolute -bottom-14 right-[12.5%] flex min-h-[15rem] w-3/4 flex-col items-start rounded-md bg-[rgba(0,0,0,0.4)] p-4 md:p-6 lg:-right-14 lg:top-[12.5%] lg:h-3/4 lg:w-80'
+                'absolute -bottom-14 right-[12.5%] flex min-h-[15rem] w-3/4 flex-col items-start rounded-md bg-[rgba(0,0,0,0.2)] p-4 hover:bg-[rgba(0,0,0,0.4)] md:p-6 lg:-right-14 lg:top-[12.5%] lg:h-3/4 lg:w-80'
               }
             >
-              <h3 className={'lg:mt-5 w-5/6 text-lg md:text-xl font-extrabold text-white'}>
+              <h3
+                className={
+                  'w-5/6 text-lg font-extrabold text-white md:text-xl lg:mt-5'
+                }
+              >
                 Space Station Flight Over the Southern Tip of Italy
               </h3>
-              <p className={'mt-5 md:w-11/12 grow text-xs leading-7'}>
+              <p className={'mt-5 grow text-xs leading-7 md:w-11/12'}>
                 The southern tip of Italy is visible in this image taken by the
                 Expedition 49 crew aboard the Iternational Space Station on
                 Sept. 17, 2016. The brightly lit city of Naples can be seen in
@@ -146,7 +157,7 @@ const Home = () => {
               <div className={'mt-5 flex w-full items-center justify-between'}>
                 <span
                   className={
-                    'cursor-pointer text-xs uppercase text-horizon-500'
+                    'cursor-pointer text-xs uppercase text-horizon-500 hover:text-horizon-700'
                   }
                 >
                   download

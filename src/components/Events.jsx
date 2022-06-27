@@ -43,19 +43,27 @@ const Events = ({ className }) => {
               {event.date}
             </span>
           </div>
-          <p className={'mt-1 text-xs leading-5'}>{event.content}</p>
+          <p
+            className={'mt-1 cursor-pointer text-xs leading-5 hover:text-white'}
+          >
+            {event.content}
+          </p>
         </div>
       ))}
       <div className='flex grow items-end justify-between'>
         <div className='flex items-center'>
           <Calendar className={'w-4 fill-white'} />
-          <span className={'ml-1 text-[.6rem] uppercase text-white'}>
+          <span
+            className={'ml-1 cursor-pointer text-[.6rem] uppercase text-white'}
+          >
             Calendar
           </span>
         </div>
-        <div className='flex items-center mt-4'>
+        <div className='mt-4 flex items-center'>
           <Rocket className={'w-4 fill-white'} />
-          <span className={'ml-1 text-[.6rem] uppercase text-white'}>
+          <span
+            className={'ml-1 cursor-pointer text-[.6rem] uppercase text-white'}
+          >
             Launches and landings
           </span>
         </div>
