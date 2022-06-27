@@ -2,9 +2,14 @@ import Nav from '@components/common/Nav';
 import TextField from '@components/common/TextField';
 import Events from '@components/Events';
 import Headline from '@components/Headline';
+import Facebook from '@components/icons/Facebook';
+import Google from '@components/icons/Google';
 import Hamburger from '@components/icons/Hamburger';
 import Magnifier from '@components/icons/Magnifier';
+import PinterestCircle from '@components/icons/PinterestCircle';
 import Play from '@components/icons/Play';
+import Plus from '@components/icons/Plus';
+import Twitter from '@components/icons/Twitter';
 import Story from '@components/Story';
 
 const Home = () => {
@@ -104,7 +109,63 @@ const Home = () => {
           More stories
         </div>
       </section>
-      <section className='mt-48 flex flex-col items-center'>
+      <section className={'mt-20 w-5/6 max-w-[88rem] lg:w-3/4'}>
+        <div className={'grid gap-4 lg:grid-cols-3 xl:grid-cols-4'}>
+          <div
+            className={
+              'min-h-[20rem] basis-80 rounded-md bg-deepspace-700 p-5 hover:bg-deepspace-500'
+            }
+          >
+            <h3 className={'text-lg font-extrabold text-white'}>
+              Tweets by <span className={'text-horizon-500'}>@NASA</span>
+            </h3>
+          </div>
+          <div
+            className={
+              'relative min-h-[40rem] rounded-md bg-bordeaux-700 hover:bg-bordeaux-600 lg:col-span-2 xl:col-span-3'
+            }
+          >
+            <span className='absolute top-0 left-0 bg-[rgba(0,0,0,0.1)] px-4 py-1 text-sm uppercase text-white'>
+              image of the day
+            </span>
+            <div
+              className={
+                'absolute -bottom-14 right-[12.5%] flex min-h-[15rem] w-3/4 flex-col items-start rounded-md bg-[rgba(0,0,0,0.4)] p-4 md:p-6 lg:-right-14 lg:top-[12.5%] lg:h-3/4 lg:w-80'
+              }
+            >
+              <h3 className={'lg:mt-5 w-5/6 text-lg md:text-xl font-extrabold text-white'}>
+                Space Station Flight Over the Southern Tip of Italy
+              </h3>
+              <p className={'mt-5 md:w-11/12 grow text-xs leading-7'}>
+                The southern tip of Italy is visible in this image taken by the
+                Expedition 49 crew aboard the Iternational Space Station on
+                Sept. 17, 2016. The brightly lit city of Naples can be seen in
+                the bottom section of the image. A Russian Soyuz spacecraft can
+                be seen in the foreground.
+              </p>
+              <div className={'mt-5 flex w-full items-center justify-between'}>
+                <span
+                  className={
+                    'cursor-pointer text-xs uppercase text-horizon-500'
+                  }
+                >
+                  download
+                </span>
+                <div className={'flex'}>
+                  <Facebook className={'mx-2 w-4 cursor-pointer fill-white'} />
+                  <Twitter className={'mx-2 w-4 cursor-pointer fill-white'} />
+                  <PinterestCircle
+                    className={'mx-2 w-4 cursor-pointer fill-white'}
+                  />
+                  <Google className={'mx-2 w-4 cursor-pointer fill-white'} />
+                  <Plus className={'mx-2 w-4 cursor-pointer fill-white'} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='mt-28 flex flex-col items-center'>
         <h1 className='text-[2.5rem] font-extrabold text-white'>
           Our missions
         </h1>
