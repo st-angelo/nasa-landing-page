@@ -9,10 +9,10 @@ const Typography = ({ variant: Variant = 'span', className, children }) => {
   return (
     <Variant className={className}>
       {fragments.map((f, idx) => (
-        <>
+        <span key={idx}>
           {f}
           {idx !== fragments.length - 1 && <br />}
-        </>
+        </span>
       ))}
     </Variant>
   );

@@ -1,3 +1,4 @@
+import Carousel from '@components/common/Carousel';
 import Nav from '@components/common/Nav';
 import TextField from '@components/common/TextField';
 import Events from '@components/Events';
@@ -14,7 +15,7 @@ import Story from '@components/Story';
 
 const Home = () => {
   return (
-    <div className='flex min-h-screen flex-col items-center bg-deepspace-600'>
+    <div className='flex min-h-screen flex-col items-center overflow-hidden bg-deepspace-600'>
       <header className='flex w-full flex-col items-center'>
         <Nav />
         <section className='my-20 flex flex-col items-center'>
@@ -54,7 +55,7 @@ const Home = () => {
           by trying to get there, that will make life better here on Earth?
         </p>
       </section>
-      <section className='mt-40 w-5/6 max-w-[88rem] lg:w-3/4'>
+      <section className='mt-40 w-5/6 max-w-[91rem] lg:w-3/4'>
         <div className='grid gap-4 md:grid-cols-2 md:grid-rows-5 lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3'>
           <Story
             title={'NASA Scientists see Asteroid through robotic eyes'}
@@ -109,7 +110,7 @@ const Home = () => {
           More stories
         </div>
       </section>
-      <section className={'mt-20 w-5/6 max-w-[88rem] lg:w-3/4'}>
+      <section className={'mt-20 w-5/6 max-w-[91rem] lg:w-3/4'}>
         <div className={'grid gap-4 lg:grid-cols-3 xl:grid-cols-4'}>
           <div
             className={
@@ -184,7 +185,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='mt-28 flex flex-col items-center'>
+      <section className='mt-20 flex flex-col items-center'>
         <h1 className='text-[2.5rem] font-extrabold text-white'>
           Our missions
         </h1>
@@ -194,7 +195,12 @@ const Home = () => {
           in control rooms.
         </p>
       </section>
-      <section className='grow'></section>
+      <section className='mt-16 w-5/6 max-w-[91rem] lg:w-3/4'>
+        <Carousel />
+      </section>
+      <section className='flex h-[40rem] items-center justify-center text-4xl font-extrabold text-white'>
+        #TODO
+      </section>
       <footer className='mt-20'>
         <button className={'my-6 block w-6 fill-white md:hidden'}>
           <Hamburger />
