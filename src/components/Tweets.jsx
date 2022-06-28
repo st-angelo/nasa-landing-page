@@ -148,7 +148,7 @@ const Tweets = () => {
   return (
     <div
       className={
-        'scrollable max-h-[20rem] overflow-y-auto rounded-md bg-deepspace-700 p-6 hover:bg-deepspace-500 lg:max-h-[40rem]'
+        'scrollable max-h-[20rem] overflow-y-auto rounded-md bg-deepspace-700 p-6 lg:max-h-[40rem]'
       }
     >
       <div className='m-auto flex max-w-[30rem] flex-col gap-8'>

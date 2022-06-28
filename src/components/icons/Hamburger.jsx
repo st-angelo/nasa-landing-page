@@ -1,10 +1,11 @@
-const Hamburger = ({ className }) => (
+const Hamburger = ({ className, onClick }) => (
   <svg
     version='1.1'
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 122.879 103.609'
     xmlSpace='preserve'
     className={className}
+    onClick={onClick}
   >
     <g>
       <path
