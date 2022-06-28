@@ -4,6 +4,15 @@
   html {
     @apply text-horizon-100;
   }
+
+  /* Unfortunately does not work in Firefox :( */
+  .scrollable::-webkit-scrollbar {
+    @apply w-3 bg-deepspace-400;
+  }
+
+  .scrollable::-webkit-scrollbar-thumb {
+    @apply rounded-xl bg-deepspace-300;
+  }
 }
 
 @tailwind components;

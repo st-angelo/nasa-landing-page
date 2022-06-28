@@ -1,6 +1,13 @@
 import Typography from './common/Typography';
 
-const Headline = ({ title, tag, content, background, className }) => (
+const Headline = ({
+  title,
+  tag,
+  content,
+  background,
+  className,
+  titleClasses,
+}) => (
   <div
     className={`relative rounded-md bg-bordeaux-700 hover:bg-bordeaux-600 ${className}`}
   >
@@ -10,10 +17,12 @@ const Headline = ({ title, tag, content, background, className }) => (
       </span>
     )}
     <div className='m-5 mb-28 flex w-[60%] flex-col'>
-      <Typography className='text-lg font-extrabold text-white'>
+      <Typography
+        className={`text-lg font-extrabold text-white ${titleClasses}`}
+      >
         {title}
       </Typography>
-      <p className='text-sm mt-2'>{content}</p>
+      <p className='mt-2 text-sm'>{content}</p>
     </div>
   </div>
 );

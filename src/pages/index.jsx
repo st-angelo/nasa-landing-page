@@ -12,6 +12,7 @@ import Play from '@components/icons/Play';
 import Plus from '@components/icons/Plus';
 import Twitter from '@components/icons/Twitter';
 import Story from '@components/Story';
+import Tweets from '@components/Tweets';
 
 const Home = () => {
   return (
@@ -91,7 +92,7 @@ const Home = () => {
           />
           <Story title={'Interstellar trailer'} className={''} />
           <Headline
-            title={"Modern Figures: NASA's#nl#Past and Future"}
+            title={"Modern Figures: NASA's Past and Future"}
             tag={"nasa's modern figures"}
             content={
               'The book and film "Hidden Figures" tell the story of Katherine Jognson (left) and other African-American women who were essential to the success of early spaceflight.'
@@ -99,6 +100,7 @@ const Home = () => {
             className={
               'row-start-1 md:col-span-2 md:col-start-1 md:row-start-4 lg:row-start-3 xl:col-start-2 xl:row-start-2'
             }
+            titleClasses={'w-[22ch]'}
           />
           <Events
             className={
@@ -112,22 +114,7 @@ const Home = () => {
       </section>
       <section className={'mt-20 w-5/6 max-w-[91rem] lg:w-3/4'}>
         <div className={'grid gap-4 lg:grid-cols-3 xl:grid-cols-4'}>
-          <div
-            className={
-              'min-h-[20rem] basis-80 rounded-md bg-deepspace-700 p-5 hover:bg-deepspace-500'
-            }
-          >
-            <h3 className={'text-lg font-extrabold text-white'}>
-              Tweets by{' '}
-              <span
-                className={
-                  'cursor-pointer text-horizon-500 hover:text-horizon-700'
-                }
-              >
-                @NASA
-              </span>
-            </h3>
-          </div>
+          <Tweets />
           <div
             className={
               'relative min-h-[40rem] rounded-md bg-bordeaux-700 hover:bg-bordeaux-600 lg:col-span-2 xl:col-span-3'

@@ -18,7 +18,7 @@ const Nav = () => (
       <NavItem name={'About'} />
       <NavItem name={'Nasa Audiences'} />
       <li className={'cursor-pointer'}>
-        <Share className={'w-5'} />
+        <Share className={'w-5 fill-white'} />
       </li>
     </ul>
   </nav>
