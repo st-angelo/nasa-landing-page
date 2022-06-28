@@ -100,14 +100,14 @@ const Carousel = ({}) => {
       <ChevronLeft
         onClick={handleMoveLeft}
         className={`absolute top-1/2 -left-6 z-10 w-3 -translate-y-1/2 cursor-pointer fill-horizon-100 hover:fill-white ${
-          offset === 0 ? 'pointer-events-none fill-deepspace-100' : ''
+          offset === 0 ? 'pointer-events-none fill-deepspace-200' : ''
         }`}
       />
       <ChevronRight
         onClick={handleMoveRight}
         className={`absolute top-1/2 -right-6 z-10 w-3 -translate-y-1/2 cursor-pointer fill-horizon-100 hover:fill-white ${
           offset === slides.length - size
-            ? 'pointer-events-none fill-deepspace-100'
+            ? 'pointer-events-none fill-deepspace-200'
             : ''
         }`}
       />

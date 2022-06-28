@@ -5,6 +5,12 @@
     @apply text-horizon-100;
   }
 
+  /* For Firefox and other browsers that don't support -webkit-scrollbar */
+  .scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(88, 88, 88) rgb(62, 62, 62);
+  }
+
   /* Unfortunately does not work in Firefox :( */
   .scrollable::-webkit-scrollbar {
     @apply w-3 bg-deepspace-400;

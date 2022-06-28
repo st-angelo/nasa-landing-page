@@ -151,15 +151,15 @@ const Tweets = () => {
         'scrollable max-h-[20rem] overflow-y-auto rounded-md bg-deepspace-700 p-6 hover:bg-deepspace-500 lg:max-h-[40rem]'
       }
     >
-      <h3 className={'mb-8 text-xl font-extrabold text-white'}>
-        Tweets by{' '}
-        <span
-          className={'cursor-pointer text-horizon-500 hover:text-horizon-700'}
-        >
-          @NASA
-        </span>
-      </h3>
-      <div className='flex flex-col gap-8'>
+      <div className='m-auto flex max-w-[30rem] flex-col gap-8'>
+        <h3 className={'text-xl font-extrabold text-white'}>
+          Tweets by{' '}
+          <span
+            className={'cursor-pointer text-horizon-500 hover:text-horizon-700'}
+          >
+            @NASA
+          </span>
+        </h3>
         {tweets.map((tweet, idx) =>
           tweet.type === 'tweet' ? (
             <Tweet tweet={tweet} key={idx} />
