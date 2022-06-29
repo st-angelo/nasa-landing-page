@@ -28,6 +28,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   .rocket-hiding-gradient {
