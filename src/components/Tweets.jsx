@@ -164,7 +164,7 @@ const Tweets = () => {
           tweet.type === 'tweet' ? (
             <Tweet tweet={tweet} key={idx} />
           ) : (
-            <div className={'flex flex-col'}>
+            <div className={'flex flex-col'} key={idx}>
               <div className={'mb-2 flex'}>
                 <Retweet className={'w-[.875rem] fill-horizon-500'} />
                 <span className={'ml-1 text-[.8rem] text-white'}>

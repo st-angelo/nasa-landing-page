@@ -23,6 +23,23 @@
     );
   }
 
+  .rocket-background-wrapper {
+    background-image: url('/rocket.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .rocket-hiding-gradient {
+    background-image: linear-gradient(
+      to top,
+      transparent 50%,
+      rgba(28, 28, 28, 0.5) 60%,
+      rgba(28, 28, 28, 0.75) 70%,
+      rgba(28, 28, 28, 1) 90%
+    );
+  }
+
   /* For Firefox and other browsers that don't support -webkit-scrollbar */
   .scrollable {
     scrollbar-width: thin;

@@ -19,6 +19,7 @@ module.exports = {
         'horizon-700': 'rgb(57,122,245)',
         'bordeaux-600': 'rgb(52,57,69)',
         'bordeaux-700': 'rgb(34,37,45)',
+        'bordeaux-900': 'rgb(5,4,15)',
         'deepspace-50': 'rgb(125,125,125)',
         'deepspace-100': 'rgb(100,100,100)',
         'deepspace-200': 'rgb(88,88,88)',

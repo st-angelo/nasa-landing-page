@@ -173,23 +173,27 @@ const Home = () => (
         </div>
       </div>
     </section>
-    <section className='mt-20 flex flex-col items-center'>
-      <h1 className='text-[2.5rem] font-extrabold text-white'>Our missions</h1>
-      <p className='mx-2 mt-5 max-w-[45rem] text-center leading-7'>
-        Ten field centers and a variety of installations conduct the day-to-day
-        work, in labora-tories, on air fields, in wind tunnels and in control
-        rooms.
-      </p>
-    </section>
-    <section className='mt-16 w-5/6 max-w-[91rem] lg:w-3/4'>
-      <Carousel />
-    </section>
-    <section className='flex h-[45rem] items-center justify-center text-4xl font-extrabold text-white'>
-      #TODO
-    </section>
-    <footer className='mb-6'>
-      <Footer />
-    </footer>
+    <div
+      className={'rocket-background-wrapper flex w-full flex-col items-center'}
+    >
+      <section className='rocket-hiding-gradient flex w-full flex-col items-center py-20'>
+        <h1 className='text-[2.5rem] font-extrabold text-white'>
+          Our missions
+        </h1>
+        <p className='mx-2 mt-5 max-w-[45rem] text-center leading-7'>
+          Ten field centers and a variety of installations conduct the
+          day-to-day work, in labora-tories, on air fields, in wind tunnels and
+          in control rooms.
+        </p>
+      </section>
+      <section className='w-5/6 max-w-[91rem] lg:w-3/4'>
+        <Carousel />
+      </section>
+      <section className='flex h-[45rem]'></section>
+      <footer className='mb-6'>
+        <Footer />
+      </footer>
+    </div>
   </div>
 );
 
