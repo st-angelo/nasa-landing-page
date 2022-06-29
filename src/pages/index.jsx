@@ -13,6 +13,7 @@ import Plus from '@components/icons/Plus';
 import Twitter from '@components/icons/Twitter';
 import Story from '@components/Story';
 import Tweets from '@components/Tweets';
+import Image from 'next/image';
 
 const Home = () => (
   <div className='flex min-h-screen flex-col items-center overflow-hidden bg-deepspace-600'>
@@ -62,39 +63,51 @@ const Home = () => (
         <Story
           title={'NASA Scientists see Asteroid through robotic eyes'}
           tag={'osiris-rex'}
+          imageUrl={'/story-asteroid.jpg'}
           size={'large'}
           className={'md:row-span-2 md:row-start-1'}
         />
         <Story
           title={'NASA Runs First-Ever Test of New Jet Engine Tech'}
           tag={'aeronautics'}
+          imageUrl={'/story-jet-engine.gif'}
           className={''}
         />
         <Story
           title={
             "NASA Administrator Statement on ESA's Commitment to Space Station"
           }
+          imageUrl={'/story-sattelite.jpg'}
           className={''}
         />
         <Story
           title={'TIMED: 15 Years Exploring Our Interface to Space'}
           tag={'timed'}
+          imageUrl={'/story-timed.jpg'}
           className={''}
         />
         <Story
           title={'Cassini Beams Back First Images from New Orbit'}
           tag={'cassini'}
+          imageUrl={'/story-cassini.jpg'}
           className={''}
         />
         <Story
           title={'Curiosity Rover Team Examining New Drill Hiatus'}
           tag={'mars curiosity'}
+          imageUrl={'/story-curiosity.jpg'}
           className={''}
         />
-        <Story title={'Interstellar trailer'} className={''} />
+        <Story
+          title={'Interstellar trailer'}
+          imageUrl={'/story-interstellar.jpg'}
+          playable
+          className={''}
+        />
         <Headline
           title={"Modern Figures: NASA's Past and Future"}
           tag={"nasa's modern figures"}
+          imageUrl={'/headline.png'}
           content={
             'The book and film "Hidden Figures" tell the story of Katherine Jognson (left) and other African-American women who were essential to the success of early spaceflight.'
           }
@@ -118,15 +131,23 @@ const Home = () => (
         <Tweets />
         <div
           className={
-            'relative min-h-[40rem] rounded-md bg-bordeaux-700 hover:bg-bordeaux-600 lg:col-span-2 xl:col-span-3'
+            'relative min-h-[40rem] cursor-pointer rounded-md lg:col-span-2 xl:col-span-3'
           }
         >
+          <Image
+            src={'/image-of-the-day.jpg'}
+            layout={'fill'}
+            objectPosition={'50% 50%'}
+            objectFit={'cover'}
+            className={'rounded-md'}
+            alt={`a`}
+          />
           <span className='absolute top-0 left-0 bg-[rgba(0,0,0,0.1)] px-4 py-1 text-sm uppercase text-white'>
             image of the day
           </span>
           <div
             className={
-              'absolute -bottom-14 right-[12.5%] flex min-h-[15rem] w-3/4 flex-col items-start rounded-md bg-[rgba(0,0,0,0.2)] p-4 hover:bg-[rgba(0,0,0,0.4)] md:p-6 lg:-right-14 lg:top-[12.5%] lg:h-3/4 lg:w-80'
+              'absolute -bottom-14 right-[12.5%] flex min-h-[15rem] w-3/4 flex-col items-start rounded-md bg-[rgba(0,0,0,0.4)] p-4 hover:bg-[rgba(0,0,0,0.6)] md:p-6 lg:-right-14 lg:top-[12.5%] lg:h-3/4 lg:w-80'
             }
           >
             <h3

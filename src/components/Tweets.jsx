@@ -14,7 +14,7 @@ const Tweets = () => {
       author: {
         name: 'NASA',
         tag: '@NASA',
-        avatar: '',
+        avatar: '/nasa-avatar.jpg',
         verified: true,
       },
       content: [
@@ -36,7 +36,7 @@ const Tweets = () => {
           value: 'https://blogs.nasa.gov/cygnss',
         },
       ],
-      image: '',
+      image: '/tweets-placeholder.jpg',
       date: '1m',
     },
     {
@@ -49,7 +49,7 @@ const Tweets = () => {
         author: {
           name: 'NASA_LSP',
           tag: '@NASA_LSP',
-          avatar: '',
+          avatar: '/nasa-lsp-avatar.png',
           verified: false,
         },
         content: [
@@ -79,7 +79,7 @@ const Tweets = () => {
             value: '#CYGNSS',
           },
         ],
-        image: '',
+        image: '/tweets-stargazer.jpg',
         date: '2h',
       },
     },
@@ -88,7 +88,7 @@ const Tweets = () => {
       author: {
         name: 'NASA',
         tag: '@NASA',
-        avatar: '',
+        avatar: '/nasa-avatar.jpg',
         verified: true,
       },
       content: [
@@ -110,7 +110,7 @@ const Tweets = () => {
           value: 'https://blogs.nasa.gov/cygnss',
         },
       ],
-      image: '',
+      image: '/tweets-placeholder.jpg',
       date: '3h',
     },
     {
@@ -118,7 +118,7 @@ const Tweets = () => {
       author: {
         name: 'NASA',
         tag: '@NASA',
-        avatar: '',
+        avatar: '/nasa-avatar.jpg',
         verified: true,
       },
       content: [
@@ -140,7 +140,7 @@ const Tweets = () => {
           value: 'https://blogs.nasa.gov/cygnss',
         },
       ],
-      image: '',
+      image: '/tweets-placeholder.jpg',
       date: '11h',
     },
   ];
@@ -189,16 +189,18 @@ const Tweet = ({ tweet, index }) => {
         <div className='flex'>
           <div
             className={
-              'mr-2 h-10 w-10 cursor-pointer rounded-md bg-horizon-500 hover:bg-horizon-700'
+              'relative mr-2 h-10 w-10 cursor-pointer hover:brightness-[.85]'
             }
-          ></div>
-          {/* <Image
-          width={'1rem'}
-          height={'1rem'}
-          className={'rounded-md'}
-          src={'/cat.jpg'}
-          alt={`${author.name} avatar`}
-        /> */}
+          >
+            <Image
+              src={author.avatar}
+              layout={'fill'}
+              objectPosition={'50% 50%'}
+              objectFit={'cover'}
+              className={'rounded-md'}
+              alt={`${author.name} avatar`}
+            />
+          </div>
           <div className={'mb-4 flex flex-col'}>
             <div className={'flex'}>
               <span
@@ -222,9 +224,18 @@ const Tweet = ({ tweet, index }) => {
       <TextBuilder className={'text-[.8rem] leading-6'} components={content} />
       <div
         className={
-          'my-3 h-28 w-full cursor-pointer rounded-md bg-bordeaux-700 hover:bg-bordeaux-600'
+          'relative my-3 h-28 w-full cursor-pointer hover:brightness-[.85]'
         }
-      ></div>
+      >
+        <Image
+          src={image}
+          layout={'fill'}
+          objectPosition={'50% 50%'}
+          objectFit={'cover'}
+          className={'rounded-md'}
+          alt={`tweet related image`}
+        />
+      </div>
       <div className={'flex items-center justify-between'}>
         <div className={'flex gap-4'}>
           <Like

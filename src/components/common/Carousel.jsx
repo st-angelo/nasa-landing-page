@@ -11,60 +11,60 @@ const Carousel = ({}) => {
       subtitle: 'Space Telescope',
       alignY: 'top',
       alignX: 'left',
-      source: '/cat.jpg',
+      source: '/carousel-hubble.jpg',
     },
     {
       title: 'Juno',
       subtitle: 'Mission at Jupiter',
       alignY: 'bottom',
-      alignX: 'right',
-      source: '/cat.jpg',
+      alignX: 'left',
+      source: '/carousel-juno.jpg',
     },
     {
       title: 'New Horizon',
       subtitle: 'Pluto and Beyond',
       alignY: 'top',
-      alignX: 'left',
-      source: '/cat.jpg',
+      alignX: 'right',
+      source: '/carousel-pluto.jpg',
     },
     {
       title: 'Cassini',
       subtitle: 'Mission at Saturn',
-      alignY: 'center',
+      alignY: 'top',
+      alignX: 'left',
+      source: '/carousel-saturn.jpg',
+    },
+    {
+      title: 'Curiosity',
+      subtitle: 'Mars Rover',
+      alignY: 'bottom',
       alignX: 'right',
-      source: '/cat.jpg',
+      source: '/carousel-mars.jpg',
     },
     {
-      title: 'Curiosity',
-      subtitle: 'Mars Rover',
+      title: 'Cat',
+      subtitle: 'Stevens',
       alignY: 'top',
       alignX: 'left',
       source: '/cat.jpg',
     },
     {
-      title: 'Curiosity',
-      subtitle: 'Mars Rover',
+      title: 'Cat',
+      subtitle: 'Stevens',
       alignY: 'top',
       alignX: 'left',
       source: '/cat.jpg',
     },
     {
-      title: 'Curiosity',
-      subtitle: 'Mars Rover',
+      title: 'Cat',
+      subtitle: 'Stevens',
       alignY: 'top',
       alignX: 'left',
       source: '/cat.jpg',
     },
     {
-      title: 'Curiosity',
-      subtitle: 'Mars Rover',
-      alignY: 'top',
-      alignX: 'left',
-      source: '/cat.jpg',
-    },
-    {
-      title: 'Curiosity',
-      subtitle: 'Mars Rover',
+      title: 'Cat',
+      subtitle: 'Stevens',
       alignY: 'top',
       alignX: 'left',
       source: '/cat.jpg',
@@ -116,18 +116,19 @@ const Carousel = ({}) => {
           slides.map((slide, idx) => (
             <figure
               key={idx}
-              className={`relative mx-2 h-[24rem] w-[22rem] shrink-0 cursor-pointer rounded-md bg-bordeaux-700 transition-all first:ml-0 last:mr-0 hover:bg-bordeaux-600 hover:brightness-[.85] ${
+              className={`relative mx-2 h-[24rem] w-[22rem] shrink-0 cursor-pointer rounded-md transition-all first:ml-0 last:mr-0 hover:brightness-[.85] ${
                 idx < offset || idx >= offset + size ? 'opacity-20' : ''
               }`}
               style={{ transform: `translateX(${23 * -offset}rem)` }}
             >
-              {/* <Image
+              <Image
                 src={slide.source}
                 layout={'fill'}
+                objectPosition={'50% 50%'}
                 objectFit={'cover'}
                 className={'rounded-md'}
                 alt={`a`}
-              /> */}
+              />
               <figcaption
                 className={`absolute ${
                   slide.alignX === 'right'

@@ -26,7 +26,6 @@ const ResponsiveList = ({ items, listClasses, popoverClasses }) => {
   );
 
   useEffect(() => {
-    console.log(screenSize, handleVisible);
     if (screenSize === 'md' || !handleVisible) setOpen(false);
   }, [screenSize, handleVisible]);
 

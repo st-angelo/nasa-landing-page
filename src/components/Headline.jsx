@@ -4,12 +4,15 @@ const Headline = ({
   title,
   tag,
   content,
-  background,
+  imageUrl,
   className,
   titleClasses,
 }) => (
   <div
-    className={`relative rounded-md bg-bordeaux-700 hover:bg-bordeaux-600 ${className}`}
+    className={`relative rounded-md  ${className} bg-cover bg-center bg-no-repeat`}
+    style={{
+      backgroundImage: `linear-gradient(to right, rgba(23,23,23,1) 40%, rgba(23,23,23,0.5) 70%, transparent), url(${imageUrl})`,
+    }}
   >
     {tag && (
       <span className='absolute bottom-0 left-0 px-5 py-2 text-sm uppercase text-white'>
