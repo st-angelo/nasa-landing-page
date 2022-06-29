@@ -10,7 +10,7 @@ const Story = ({
   className,
 }) => (
   <div
-    className={`relative flex min-h-[18rem] flex-col justify-end rounded-md ${className} bg-cover bg-center bg-no-repeat`}
+    className={`relative flex min-h-[18rem] flex-col justify-end rounded-md ${className} cursor-pointer bg-cover bg-center bg-no-repeat hover:brightness-[.85]`}
     style={{
       backgroundImage: `linear-gradient(to top, rgba(23,23,23,1) 5%, rgba(23,23,23,0.5) 25%, transparent), url(${imageUrl})`,
     }}
