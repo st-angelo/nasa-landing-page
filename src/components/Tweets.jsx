@@ -171,7 +171,7 @@ const Tweets = () => {
                   {tweet.author.name} Retweeted
                 </span>
               </div>
-              <Tweet tweet={tweet.targetTweet} key={idx} />
+              <Tweet tweet={tweet.targetTweet} index={idx} />
             </div>
           )
         )}
@@ -180,11 +180,11 @@ const Tweets = () => {
   );
 };
 
-const Tweet = ({ tweet, key }) => {
+const Tweet = ({ tweet, index }) => {
   const { author, content, image, date } = tweet;
 
   return (
-    <div key={key} className={'flex flex-col'}>
+    <div key={index} className={'flex flex-col'}>
       <div className={'flex items-start justify-between'}>
         <div className='flex'>
           <div

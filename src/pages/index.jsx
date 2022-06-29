@@ -1,13 +1,11 @@
 import Carousel from '@components/common/Carousel';
 import Footer from '@components/common/Footer';
 import Nav from '@components/common/Nav';
-import ResponsiveList from '@components/common/ResponsiveList';
 import TextField from '@components/common/TextField';
 import Events from '@components/Events';
 import Headline from '@components/Headline';
 import Facebook from '@components/icons/Facebook';
 import Google from '@components/icons/Google';
-import Hamburger from '@components/icons/Hamburger';
 import Magnifier from '@components/icons/Magnifier';
 import PinterestCircle from '@components/icons/PinterestCircle';
 import Play from '@components/icons/Play';
@@ -18,34 +16,36 @@ import Tweets from '@components/Tweets';
 
 const Home = () => (
   <div className='flex min-h-screen flex-col items-center overflow-hidden bg-deepspace-600'>
-    <header className='flex w-full flex-col items-center'>
-      <Nav />
-      <section className='my-20 flex flex-col items-center'>
-        <h2 className='text-3xl font-[300] text-white transition-all md:text-[2.5rem]'>
-          Welcome home, Earthling
-        </h2>
-        <TextField
-          id={'search'}
-          name={'search'}
-          placeholder={'Search...'}
-          className={'my-5'}
-          inputProps={{
-            endOrnament: <Magnifier />,
-            classes:
-              'w-[20rem] focus:w-[21rem] md:w-[26rem] transition-all md:focus:w-[27rem]',
-          }}
-        />
+    <div className='earth-background-wrapper flex w-full flex-col items-center'>
+      <header className='flex w-full flex-col items-center'>
+        <Nav />
+        <section className='mb-20 mt-48 flex flex-col items-center'>
+          <h2 className='text-3xl font-[300] text-white transition-all md:text-[2.5rem]'>
+            Welcome home, Earthling
+          </h2>
+          <TextField
+            id={'search'}
+            name={'search'}
+            placeholder={'Search...'}
+            className={'my-5'}
+            inputProps={{
+              endOrnament: <Magnifier />,
+              classes:
+                'w-[20rem] focus:w-[21rem] md:w-[26rem] transition-all md:focus:w-[27rem]',
+            }}
+          />
+        </section>
+      </header>
+      <section className='earth-hiding-gradient flex w-full justify-center pt-48 pb-60 text-white'>
+        <Play className='w-12 cursor-pointer' />
+        <div className='mx-4 flex flex-col'>
+          <span className='text-xs uppercase'>Live Stream</span>
+          <span className='font-bold'>Expedition 51 Launch</span>
+          <span className='text-xs'>Start at 12:00</span>
+        </div>
       </section>
-    </header>
-    <section className='mt-48 flex text-white'>
-      <Play className='w-12 cursor-pointer' />
-      <div className='mx-4 flex flex-col'>
-        <span className='text-xs uppercase'>Live Stream</span>
-        <span className='font-bold'>Expedition 51 Launch</span>
-        <span className='text-xs'>Start at 12:00</span>
-      </div>
-    </section>
-    <section className='mt-48 flex flex-col items-center'>
+    </div>
+    <section className='flex w-full flex-col items-center'>
       <h1 className='text-3xl font-extrabold text-white transition-all md:text-[2.5rem]'>
         What Does NASA Do?
       </h1>

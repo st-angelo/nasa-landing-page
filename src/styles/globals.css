@@ -5,6 +5,24 @@
     @apply text-horizon-100;
   }
 
+  .earth-background-wrapper {
+    background-image: url('/earth-from-space.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .earth-hiding-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      rgba(28, 28, 28, 0.5) 50%,
+      rgba(28, 28, 28, 0.75) 60%,
+      rgba(28, 28, 28, 1) 90%
+    );
+  }
+
   /* For Firefox and other browsers that don't support -webkit-scrollbar */
   .scrollable {
     scrollbar-width: thin;
