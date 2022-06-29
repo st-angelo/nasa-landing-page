@@ -20,7 +20,10 @@ const Nav = () => {
         <ResponsiveList
           items={items}
           listClasses={'text-xs'}
-          popoverClasses={'top-5 right-5 w-48'}
+          popoverClasses={{
+            open: 'top-5 right-5 w-48 translate-x-0',
+            closed: 'top-5 right-0 w-48 translate-x-full',
+          }}
         />
         <Share className={'w-5 cursor-pointer fill-white'} />
       </div>

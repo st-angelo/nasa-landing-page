@@ -19,8 +19,8 @@ const Home = () => (
     <div className='earth-background-wrapper flex w-full flex-col items-center'>
       <header className='flex w-full flex-col items-center'>
         <Nav />
-        <section className='mb-20 mt-48 flex flex-col items-center'>
-          <h2 className='text-3xl font-[300] text-white transition-all md:text-[2.5rem]'>
+        <section className='mt-32 mb-20 flex flex-col items-center sm:mt-48'>
+          <h2 className='whitespace-nowrap text-3xl font-[300] text-white transition-all md:text-[2.5rem]'>
             Welcome home, Earthling
           </h2>
           <TextField

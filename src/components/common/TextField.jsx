@@ -1,7 +1,7 @@
 const TextField = ({ id, name, placeholder, className, inputProps }) => {
   return (
     <div className={className}>
-      <div className='relative w-full rounded-full bg-[rgba(255,255,255,0.1)] py-3 px-5'>
+      <div className='relative w-full rounded-full bg-[rgba(255,255,255,0.2)] py-3 px-5'>
         <input
           id={id}
           name={name}

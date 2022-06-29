@@ -13,7 +13,10 @@ const Footer = () => {
     <ResponsiveList
       items={items}
       listClasses={'text-xs'}
-      popoverClasses={'bottom-5 left-1/2 -translate-x-1/2 w-60'}
+      popoverClasses={{
+        open: 'bottom-5 left-1/2 -translate-x-1/2 translate-y-0 w-60',
+        closed: 'bottom-0 left-1/2 -translate-x-1/2 translate-y-full',
+      }}
     />
   );
 };

@@ -38,23 +38,23 @@ const ResponsiveList = ({ items, listClasses, popoverClasses }) => {
       <ul className={`hidden items-center md:flex ${listClasses}`}>
         {listItems}
       </ul>
-      {open && (
-        <ClientOnlyPortal selector='#menus'>
-          <div
-            className={`fixed z-20 rounded-md bg-deepspace-300 p-5 shadow-lg shadow-deepspace-500 md:hidden ${popoverClasses}`}
-          >
-            <Close
-              onClick={() => setOpen(false)}
-              className={
-                'absolute top-6 right-5 w-3 cursor-pointer fill-horizon-100 hover:fill-white'
-              }
-            />
-            <ul className={`${listClasses} flex flex-col gap-2`}>
-              {listItems}
-            </ul>
-          </div>
-        </ClientOnlyPortal>
-      )}
+      <ClientOnlyPortal selector='#menus'>
+        <div
+          className={`fixed z-20 rounded-md bg-[rgba(33,33,33,0.9)] p-5 shadow-lg shadow-deepspace-500 transition-all md:hidden ${
+            open
+              ? `${popoverClasses.open} opacity-100`
+              : `${popoverClasses.closed} opacity-0`
+          }`}
+        >
+          <Close
+            onClick={() => setOpen(false)}
+            className={
+              'absolute top-6 right-5 w-3 cursor-pointer fill-horizon-100 hover:fill-white'
+            }
+          />
+          <ul className={`${listClasses} flex flex-col gap-2`}>{listItems}</ul>
+        </div>
+      </ClientOnlyPortal>
     </Fragment>
   );
 };
