@@ -1,3 +1,4 @@
+import Github from '@components/icons/Github';
 import Nasa from '@components/icons/Nasa';
 import Share from '@components/icons/Share';
 import ResponsiveList from './ResponsiveList';
@@ -26,6 +27,13 @@ const Nav = () => {
           }}
         />
         <Share className={'w-5 cursor-pointer fill-white'} />
+        <a
+          target={'_blank'}
+          href={'https://github.com/st-angelo/nasa-landing-page'}
+          rel='noreferrer'
+        >
+          <Github className={'w-5 cursor-pointer fill-white'} />
+        </a>
       </div>
     </nav>
   );
