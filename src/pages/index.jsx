@@ -20,8 +20,8 @@ const Home = () => (
     <div className='earth-background-wrapper flex w-full flex-col items-center'>
       <header className='flex w-full flex-col items-center'>
         <Nav />
-        <section className='mt-32 mb-20 flex flex-col items-center sm:mt-48'>
-          <h2 className='whitespace-nowrap text-3xl font-[300] text-white transition-all md:text-[2.5rem]'>
+        <section className='my-32 flex flex-col items-center'>
+          <h2 className='whitespace-nowrap text-2xl font-[300] text-white transition-all md:text-[2.5rem]'>
             Welcome home, Earthling
           </h2>
           <TextField
@@ -32,7 +32,7 @@ const Home = () => (
             inputProps={{
               endOrnament: <Magnifier />,
               classes:
-                'w-[20rem] focus:w-[21rem] md:w-[26rem] transition-all md:focus:w-[27rem]',
+                'w-[15rem] focus:w-[16rem] md:w-[26rem] transition-all md:focus:w-[27rem]',
             }}
           />
         </section>
