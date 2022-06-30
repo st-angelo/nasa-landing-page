@@ -4,4 +4,4 @@
 
 #### Can be viewed at https://nasa-landing-page-challenge.netlify.app/
 
-##### _Note:_ The implementation is messy, just wanted to get it to look more or less similar. Also, I'm no Photoshop master. 
+##### _TODO_ Add Storybook. Polish the implementation. Wanted to get it up and running as fast as I could.
