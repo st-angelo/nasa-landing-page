@@ -142,7 +142,7 @@ const Home = () => (
             className={'rounded-md'}
             alt={`a`}
           />
-          <span className='absolute top-0 left-0 bg-[rgba(0,0,0,0.1)] px-4 py-1 text-sm uppercase text-white'>
+          <span className='absolute top-0 left-0 bg-[rgba(0,0,0,0.3)] px-4 py-1 text-sm uppercase text-white'>
             image of the day
           </span>
           <div
@@ -197,7 +197,7 @@ const Home = () => (
     <div
       className={'rocket-background-wrapper flex w-full flex-col items-center'}
     >
-      <section className='rocket-hiding-gradient flex w-full flex-col items-center py-20'>
+      <section className='flex w-full flex-col items-center bg-deepspace-600 py-20'>
         <h1 className='text-[2.5rem] font-extrabold text-white'>
           Our missions
         </h1>
@@ -207,8 +207,10 @@ const Home = () => (
           in control rooms.
         </p>
       </section>
-      <section className='w-5/6 max-w-[91rem] lg:w-3/4'>
-        <Carousel />
+      <section className='rocket-hiding-gradient flex w-full justify-center'>
+        <div className='w-5/6 max-w-[91rem] lg:w-3/4'>
+          <Carousel />
+        </div>
       </section>
       <section className='flex h-[45rem]'></section>
       <footer className='mb-6'>

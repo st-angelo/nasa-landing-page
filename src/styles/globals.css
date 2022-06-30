@@ -34,10 +34,10 @@
   .rocket-hiding-gradient {
     background-image: linear-gradient(
       to top,
-      transparent 50%,
-      rgba(28, 28, 28, 0.5) 60%,
-      rgba(28, 28, 28, 0.75) 70%,
-      rgba(28, 28, 28, 1) 90%
+      transparent,
+      rgba(28, 28, 28, 0.5) 15%,
+      rgba(28, 28, 28, 0.75) 30%,
+      rgba(28, 28, 28, 1) 45%
     );
   }
 
