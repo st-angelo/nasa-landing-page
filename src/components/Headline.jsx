@@ -9,7 +9,7 @@ const Headline = ({
   titleClasses,
 }) => (
   <div
-    className={`relative rounded-md  ${className} cursor-pointer bg-cover bg-center bg-no-repeat hover:brightness-[.85]`}
+    className={`relative rounded-md  ${className} cursor-pointer bg-cover bg-right bg-no-repeat hover:brightness-[.85]`}
     style={{
       backgroundImage: `linear-gradient(to right, rgba(23,23,23,1) 40%, rgba(23,23,23,0.5) 70%, transparent), url(${imageUrl})`,
     }}
